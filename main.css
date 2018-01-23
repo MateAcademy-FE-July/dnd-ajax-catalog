@@ -1,3 +1,7 @@
+body {
+	padding: 0;
+}
+
 .header {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin: 0 auto;
@@ -174,3 +178,44 @@
 	}
 }
 
+
+/* zindex */
+.parent_1,
+.parent_2,
+.child_2,
+.child_1 {
+	position: fixed;
+	width: 100%;
+	height: 100vh
+}
+
+.parent_1 {
+	background: red;
+	z-index: 0;
+}
+.parent_2 {
+	background: blueviolet;
+	z-index: 10;
+}
+.child_1 {
+	background: greenyellow;
+	z-index: 100;
+}
+.child_2 {
+	background: #d3531a;
+	z-index: 200;
+}
+
+/* MODAL */
+
+.modal-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100vh;
+	background: tomato;
+	/* transform: translateY(-150%); */
+	transition: all .3s;
+}
