@@ -58,8 +58,31 @@ body {
 
 .nav__button {
 	margin-left: 16px;
+	position: relative;
 }
+
 .button {
+	padding: 10px 20px;
+}
+
+.button:hover {
+	background: rgba(200, 200, 200, 0.2);
+}
+
+.amount {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 200, 0.5);
+	font-size: 14px;
+	font-weight: 500;
+	width: 20px;
+	padding: 4px;
+	border-radius: 50%;
+	transform: translate(50%, 50%);
+	color: white;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .header__logo {
@@ -75,6 +98,7 @@ body {
 }
 
 .burger {
+	display: none;
 	width: 40px;
 	height: 20px;
 	position: relative;
